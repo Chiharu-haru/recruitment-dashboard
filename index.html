@@ -1,147 +1,1955 @@
-git remote add origin https://github.com/Chiharu-haru/recruitment-dashboard.git
-git push -u origin main
-error: remote origin already exists.
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
- ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/Chiharu-haru/recruitment-dashboard.git'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git pull origin main --allow-unrelated-histories
-git push -u origin main
-remote: Enumerating objects: 30, done.
-remote: Counting objects: 100% (30/30), done.
-remote: Compressing objects: 100% (28/28), done.
-remote: Total 30 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (30/30), 96.35 KiB | 4.01 MiB/s, done.
-From https://github.com/Chiharu-haru/recruitment-dashboard
- * branch            main       -> FETCH_HEAD
- * [new branch]      main       -> origin/main
-hint: You have divergent branches and need to specify how to reconcile them.
-hint: You can do so by running one of the following commands sometime before
-hint: your next pull:
-hint: 
-hint:   git config pull.rebase false  # merge
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint: 
-hint: You can replace "git config" with "git config --global" to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
-fatal: Need to specify how to reconcile divergent branches.
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/Chiharu-haru/recruitment-dashboard.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push -u origin main --force
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 22.68 KiB | 11.34 MiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
- + 1c95167...e6a440c main -> main (forced update)
-branch 'main' set up to track 'origin/main'.
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push origin main --force
-Enumerating objects: 6, done.
-Counting objects: 100% (6/6), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (6/6), 58.58 KiB | 11.72 MiB/s, done.
-Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
- + 51a2ff3...f12dcfc main -> main (forced update)
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push origin main --force
-Everything up-to-date
-chiharu.asaga@MacBook-Air-6 repo % cp /Users/chiharu.asaga/Desktop/recruitment_dashboard.html ~/repo/index.html
-cd ~/repo
-git add index.html
-git commit -m "Fix: use correct dashboard HTML"
-git push origin main --force
-[main 8dc626e] Fix: use correct dashboard HTML
- Committer: Chiharu Asaga <chiharu.asaga@MacBook-Air-6.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 1 file changed, 1898 insertions(+), 2255 deletions(-)
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 22.73 KiB | 22.73 MiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
-   f12dcfc..8dc626e  main -> main
-chiharu.asaga@MacBook-Air-6 repo % cp /Users/chiharu.asaga/Desktop/index.html ~/repo/index.html
-cd ~/repo
-head -20 index.html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>採用進捗ダッシュボード</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-// GENERATED from dc-runtime/src/*.ts — do not edit. Rebuild with `cd dc-runtime && bun run build`.
-"use strict";
-(() => {
-  var __defProp = Object.defineProperty;
-  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-  var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-
-  // src/react.ts
-  function getReact() {
-    const R = window.React;
-    if (!R) throw new Error("dc-runtime: window.React is not available yet");
-    return R;
-  }
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push origin main --force
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 35.93 KiB | 11.98 MiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
-   8dc626e..8802ec7  main -> main
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push origin main --force
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 22.73 KiB | 11.36 MiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Chiharu-haru/recruitment-dashboard.git
-   8802ec7..28c7c51  main -> main
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-git push origin main --force
-Everything up-to-date
-chiharu.asaga@MacBook-Air-6 repo % cd ~/repo
-head -3 index.html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-chiharu.asaga@MacBook-Air-6 repo % cat ~/Desktop/recruitment_dashboard.html | pbcopy
-chiharu.asaga@MacBook-Air-6 repo % 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>採用進捗ダッシュボード</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<style>
+:root{
+  --bg:#0f1117;--surf:#1a1d27;--surf2:#232637;--surf3:#2c3049;
+  --border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);
+  --text:#e8eaf0;--text2:rgba(232,234,240,.55);--text3:rgba(232,234,240,.28);
+  --accent:#5b6af7;--accent2:#7b89ff;
+  --green:#34d399;--red:#f87171;--yellow:#fbbf24;--orange:#fb923c;--purple:#a78bfa;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Yu Gothic UI',Meiryo,-apple-system,sans-serif;font-size:13px;line-height:1.6}
+
+/* ─── Header ─── */
+#hdr{height:52px;background:var(--surf);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;flex-shrink:0;position:relative;z-index:50}
+.logo{width:28px;height:28px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#fff;flex-shrink:0}
+.hdr-title{font-size:14px;font-weight:700}
+.hdr-file{font-size:11px;color:var(--text2);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hdr-spacer{flex:1}
+.btn{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:6px;border:1px solid var(--border2);background:var(--surf2);color:var(--text);font-size:12px;font-family:inherit;cursor:pointer;transition:background .12s;white-space:nowrap}
+.btn:hover{background:var(--surf3)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2);border-color:var(--accent2)}
+
+/* ─── Tabs ─── */
+#tab-nav{height:40px;background:var(--surf);border-bottom:1px solid var(--border);display:flex;padding:0 24px;gap:0;flex-shrink:0}
+.tab-btn{padding:0 18px;font-size:12px;font-weight:600;color:var(--text2);cursor:pointer;border:none;background:none;font-family:inherit;position:relative;letter-spacing:.03em;transition:color .12s}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--accent2)}
+.tab-btn.active::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:2px;background:var(--accent2);border-radius:1px 1px 0 0}
+
+/* ─── Main scroll ─── */
+#main-wrap{flex:1;overflow:hidden;display:flex;flex-direction:column}
+.tab-panel{display:none;height:100%;overflow-y:auto;padding:22px 24px}
+.tab-panel.active{display:block}
+#app{height:100vh;display:flex;flex-direction:column}
+
+/* ─── Drop Overlay ─── */
+.drop-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.drop-overlay.show{display:flex}
+.drop-box{width:440px;background:var(--surf);border:2px dashed var(--accent);border-radius:12px;padding:48px;text-align:center}
+.drop-box h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.drop-box p{font-size:13px;color:var(--text2);margin-bottom:20px}
+
+/* ─── KPI Grid ─── */
+.kpi-grid{display:grid;gap:10px;margin-bottom:18px}
+.kpi-grid-5{grid-template-columns:repeat(5,1fr)}
+.kpi-grid-4{grid-template-columns:repeat(4,1fr)}
+.kpi-grid-3{grid-template-columns:repeat(3,1fr)}
+.kpi-grid-9{grid-template-columns:repeat(9,1fr)}
+.kpi{background:var(--surf);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.kpi-label{font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px}
+.kpi-val{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.kpi-sub{font-size:11px;color:var(--text2);margin-top:4px}
+.kpi-bar{height:2px;background:var(--border);border-radius:1px;margin-top:10px;overflow:hidden}
+.kpi-bar-fill{height:100%;border-radius:1px}
+.c-accent{color:var(--accent2)}.c-green{color:var(--green)}.c-red{color:var(--red)}.c-yellow{color:var(--yellow)}.c-orange{color:var(--orange)}.c-purple{color:var(--purple)}
+
+/* ─── Section ─── */
+.sec{background:var(--surf);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:14px}
+.sec-title{font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.sec-title span{font-weight:400;font-size:11px;color:var(--text3);text-transform:none;letter-spacing:0}
+
+/* ─── Funnel ─── */
+.funnel-row{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.funnel-lbl{width:90px;font-size:11px;color:var(--text2);text-align:right;flex-shrink:0}
+.funnel-track{flex:1;height:22px;background:var(--surf2);border-radius:3px;overflow:hidden;position:relative}
+.funnel-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#fff;min-width:0;transition:width .5s ease}
+.funnel-n{width:28px;text-align:right;font-size:12px;font-weight:700;flex-shrink:0}
+.funnel-rate{width:40px;text-align:right;font-size:10px;color:var(--text3);flex-shrink:0}
+
+/* ─── Pass rate cards ─── */
+.rate-grid{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.rate-card{background:var(--surf2);border:1px solid var(--border);border-radius:6px;padding:8px 12px;text-align:center;min-width:80px}
+.rate-card .arrow{font-size:10px;color:var(--text3);margin:2px 0}
+.rate-card .pct{font-size:16px;font-weight:800;color:var(--accent2)}
+.rate-card .lbl{font-size:10px;color:var(--text2)}
+
+/* ─── Candidate Cards ─── */
+.cand-section{margin-bottom:14px}
+.cand-step-hdr{font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.07em;padding:6px 0;border-bottom:1px solid var(--border);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.step-count{background:var(--surf3);border-radius:10px;padding:1px 8px;font-size:11px;color:var(--text);font-weight:600}
+.cand-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.cand-card{background:var(--surf);border:1px solid var(--border);border-radius:8px;padding:14px}
+.cand-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.cand-name{font-size:14px;font-weight:700}
+.cand-job{font-size:11px;color:var(--text2);margin-top:2px}
+.cand-badges{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;white-space:nowrap}
+.badge-shot{background:rgba(91,106,247,.15);color:var(--accent2);border:1px solid rgba(91,106,247,.3)}
+.badge-noshot{background:rgba(232,234,240,.06);color:var(--text2);border:1px solid var(--border2)}
+.badge-hired{background:rgba(52,211,153,.1);color:var(--green);border:1px solid rgba(52,211,153,.25)}
+.badge-final{background:rgba(251,191,36,.1);color:var(--yellow);border:1px solid rgba(251,191,36,.25)}
+.badge-2nd{background:rgba(167,139,250,.1);color:var(--purple);border:1px solid rgba(167,139,250,.25)}
+.badge-1st{background:rgba(96,165,250,.1);color:#60a5fa;border:1px solid rgba(96,165,250,.25)}
+.cand-channel{font-size:11px;color:var(--text2);margin-bottom:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cand-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.cand-row-lbl{font-size:11px;color:var(--text2);width:64px;flex-shrink:0}
+.cand-input{background:var(--surf2);border:1px solid var(--border2);color:var(--text);font-family:inherit;font-size:12px;padding:3px 7px;border-radius:4px;width:80px;outline:none;transition:border-color .15s}
+.cand-input:focus{border-color:var(--accent)}
+.cand-input.unregistered{border-color:var(--orange);color:var(--orange)}
+.cand-rate-txt{font-size:12px;font-weight:600}
+.reward-val{font-size:13px;font-weight:700;color:var(--green)}
+.reward-dash{font-size:12px;color:var(--text3)}
+.flag-row{display:flex;gap:5px}
+.flag-btn{padding:3px 10px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--border2);background:var(--surf2);color:var(--text2);font-family:inherit;transition:all .12s}
+.flag-btn:hover{background:var(--surf3)}
+.flag-btn.active-high{background:rgba(52,211,153,.15);color:var(--green);border-color:rgba(52,211,153,.4)}
+.flag-btn.active-mid{background:rgba(251,191,36,.12);color:var(--yellow);border-color:rgba(251,191,36,.35)}
+.flag-btn.active-low{background:rgba(248,113,113,.1);color:var(--red);border-color:rgba(248,113,113,.3)}
+
+/* ─── Table ─── */
+.tbl-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse}
+thead th{background:var(--surf2);padding:9px 12px;font-size:10px;font-weight:700;color:var(--text2);text-align:left;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;border-bottom:1px solid var(--border)}
+tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--surf2)}
+tbody td{padding:9px 12px;font-size:12px;vertical-align:middle}
+.td-num{text-align:right;font-variant-numeric:tabular-nums}
+.td-pct{text-align:right;color:var(--text2);font-size:11px}
+.td-bold{font-weight:700}
+.sort-btn{cursor:pointer;padding:2px 6px;border-radius:4px;background:transparent;border:1px solid var(--border);color:var(--text2);font-size:10px;font-family:inherit}
+.sort-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* ─── Heatmap ─── */
+.hm-cell{text-align:center;padding:6px 8px;font-size:11px;border-radius:3px;transition:background .2s}
+.hm-sub{font-size:10px;color:var(--text2)}
+
+/* ─── Charts ─── */
+.chart-grid{display:grid;gap:12px;margin-bottom:14px}
+.chart-2{grid-template-columns:1fr 1fr}
+.chart-3{grid-template-columns:1fr 1fr 1fr}
+.chart-wrap{position:relative;height:200px}
+
+/* ─── Toggle ─── */
+.toggle-row{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.toggle{position:relative;width:32px;height:18px;flex-shrink:0}
+.toggle input{opacity:0;width:0;height:0;position:absolute}
+.toggle-slider{position:absolute;inset:0;background:var(--surf3);border-radius:9px;cursor:pointer;transition:.2s}
+.toggle-slider:before{content:'';position:absolute;width:12px;height:12px;left:3px;bottom:3px;background:var(--text2);border-radius:50%;transition:.2s}
+.toggle input:checked+.toggle-slider{background:var(--accent)}
+.toggle input:checked+.toggle-slider:before{transform:translateX(14px);background:#fff}
+.toggle-lbl{font-size:12px;color:var(--text2)}
+
+/* ─── KGI Table ─── */
+.kgi-input{background:var(--surf2);border:1px solid var(--border2);color:var(--text);font-family:inherit;font-size:12px;padding:3px 6px;border-radius:4px;width:52px;text-align:center;outline:none}
+.kgi-input:focus{border-color:var(--accent)}
+/* ─── KGI Drill-down ─── */
+.kgi-dept{list-style:none;margin-bottom:6px}
+.kgi-dept-summary{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--surf2);border:1px solid var(--border2);border-radius:6px;cursor:pointer;user-select:none;list-style:none}
+.kgi-dept-summary::-webkit-details-marker{display:none}
+.kgi-dept-summary::marker{display:none}
+.kgi-dept-arrow{font-size:10px;color:var(--text3);transition:transform .15s;flex-shrink:0}
+details[open] .kgi-dept-arrow{transform:rotate(90deg)}
+.kgi-dept-name{font-size:12px;font-weight:700;flex:1}
+.kgi-dept-stats{font-size:11px;color:var(--text2);flex-shrink:0}
+.kgi-dept-bar-wrap{width:80px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;flex-shrink:0}
+.kgi-dept-bar-fill{height:100%;border-radius:2px;background:var(--green);transition:width .4s}
+.kgi-dept-bar-fill.over{background:var(--yellow)}
+.kgi-children{padding:4px 0 4px 12px;border-left:2px solid var(--border2);margin:4px 0 4px 8px}
+.kgi-child-row{display:flex;align-items:center;gap:8px;padding:6px 4px;border-bottom:1px solid var(--border)}
+.kgi-child-row:last-child{border-bottom:none}
+.kgi-child-job{flex:1;font-size:11px;color:var(--text)}
+.kgi-child-actual{width:36px;text-align:center;font-size:12px;font-weight:700;color:var(--green);flex-shrink:0}
+.kgi-child-pct{width:36px;text-align:right;font-size:10px;color:var(--text3);flex-shrink:0}
+.kgi-del-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:12px;padding:2px 4px;border-radius:3px;flex-shrink:0;line-height:1}
+.kgi-del-btn:hover{color:var(--red);background:rgba(248,113,113,.1)}
+.kgi-hidden-row{display:flex;align-items:center;gap:8px;padding:5px 4px}
+.kgi-hidden-row .kgi-child-job{color:var(--text3);text-decoration:line-through}
+
+/* ─── Yomi ─── */
+.yomi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.yomi-card{background:var(--surf2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.yomi-lbl{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.yomi-val{font-size:22px;font-weight:800;line-height:1}
+.yomi-sub{font-size:10px;color:var(--text2);margin-top:4px}
+
+/* ─── Budget ─── */
+.budget-dept-block{background:var(--surf2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:8px}
+.budget-dept-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.budget-dept-name{font-size:13px;font-weight:700}
+.budget-inputs-row{display:flex;align-items:center;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.budget-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.budget-bar-lbl{font-size:10px;color:var(--text2);width:46px;flex-shrink:0}
+.budget-bar-track{flex:1;height:6px;background:var(--surf3);border-radius:3px;overflow:hidden}
+.budget-bar-fill{height:100%;border-radius:3px;transition:width .4s;background:var(--accent)}
+.budget-bar-fill.over{background:var(--red)}
+.budget-bar-fill.green{background:var(--green)}
+.budget-bar-val{font-size:11px;color:var(--text2);min-width:150px;text-align:right;white-space:nowrap;flex-shrink:0}
+.budget-pace-row{display:flex;align-items:center;gap:8px;margin-top:2px}
+.budget-pace-lbl{font-size:10px;color:var(--text2);width:46px;flex-shrink:0}
+.budget-pace-val{font-size:11px;font-weight:600}
+
+/* ─── Filter ─── */
+.filter-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.filter-pill{padding:3px 12px;border-radius:16px;font-size:11px;cursor:pointer;border:1px solid var(--border2);background:transparent;color:var(--text2);font-family:inherit;transition:all .12s}
+.filter-pill:hover,.filter-pill.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.search-in{background:var(--surf2);border:1px solid var(--border2);color:var(--text);font-size:12px;font-family:inherit;padding:4px 10px;border-radius:6px;outline:none;width:160px}
+.search-in:focus{border-color:var(--accent)}
+
+/* ─── Empty ─── */
+.empty{text-align:center;padding:48px 24px;color:var(--text2)}
+.empty h3{font-size:16px;font-weight:700;color:var(--text3);margin-bottom:8px}
+
+/* ─── Toast ─── */
+#toast{position:fixed;bottom:20px;right:20px;background:var(--surf2);border:1px solid var(--border2);padding:10px 16px;border-radius:7px;font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:999;transform:translateY(60px);opacity:0;transition:all .2s;pointer-events:none}
+#toast.show{transform:translateY(0);opacity:1}
+
+/* ─── Date Filter ─── */
+.date-filter{display:flex;align-items:center;gap:6px;background:var(--surf2);border:1px solid var(--border2);border-radius:6px;padding:4px 10px}
+.date-filter label{font-size:11px;color:var(--text2);white-space:nowrap}
+.date-in{background:transparent;border:none;color:var(--text);font-size:12px;font-family:inherit;outline:none;width:100px}
+.date-in::-webkit-calendar-picker-indicator{filter:invert(.5)}
+.date-sep{color:var(--text3);font-size:11px}
+.btn-apply{padding:3px 10px;border-radius:4px;font-size:11px;background:var(--accent);border:none;color:#fff;cursor:pointer;font-family:inherit}
+.btn-reset{padding:3px 10px;border-radius:4px;font-size:11px;background:transparent;border:1px solid var(--border2);color:var(--text2);cursor:pointer;font-family:inherit}
+.btn-reset:hover{background:var(--surf3)}
+.filter-active-badge{font-size:10px;background:rgba(91,106,247,.25);color:var(--accent2);border-radius:10px;padding:1px 7px;white-space:nowrap}
+
+/* ─── Comment salary hint ─── */
+.salary-hint{font-size:10px;color:var(--text3);margin-left:4px}
+.salary-hint.found{color:var(--green)}
+
+/* ─── Weighted Yomi ─── */
+.conv-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px}
+.conv-table th{font-size:10px;font-weight:700;color:var(--text2);padding:5px 8px;border-bottom:1px solid var(--border);text-align:left;letter-spacing:.04em}
+.conv-table th.td-num{text-align:right}
+.conv-table td{padding:7px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+.conv-table tr:last-child td{border-bottom:none}
+.conv-override{width:52px;background:var(--surf2);border:1px solid var(--border2);color:var(--text);border-radius:4px;padding:3px 6px;font-size:11px;font-family:inherit;text-align:center}
+.conv-override.overridden{border-color:var(--yellow)}
+.conv-warn{font-size:9px;color:var(--yellow);margin-left:2px}
+.conv-clear-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:11px;padding:1px 4px;border-radius:3px;vertical-align:middle}
+.conv-clear-btn:hover{color:var(--yellow);background:rgba(251,191,36,.15)}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--surf3);border-radius:3px}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- Header -->
+<div id="hdr">
+  <div class="logo">P</div>
+  <div>
+    <div class="hdr-title">採用進捗ダッシュボード</div>
+  </div>
+  <div class="hdr-spacer"></div>
+  <!-- Date filter -->
+  <div class="date-filter">
+    <label>期間</label>
+    <input class="date-in" type="date" id="date-from">
+    <span class="date-sep">〜</span>
+    <input class="date-in" type="date" id="date-to">
+    <button class="btn-apply" onclick="applyDateFilter()">適用</button>
+    <button class="btn-reset" onclick="resetDateFilter()">全期間</button>
+    <span id="filter-badge" class="filter-active-badge" style="display:none">フィルタ中</span>
+  </div>
+  <div id="herp-btn-wrap" style="margin-left:8px">
+    <label class="btn btn-primary" style="cursor:pointer">
+      ＋ HERPデータ
+      <input type="file" id="herp-file" accept=".csv,.tsv,.txt" style="display:none">
+    </label>
+  </div>
+  <label class="btn" style="cursor:pointer;margin-left:6px" title="HERPプライベートコメントCSVから希望年収を自動抽出します">
+    ＋ コメントCSV
+    <input type="file" id="comment-file" accept=".csv,.tsv,.txt" style="display:none">
+  </label>
+  <label class="btn" style="cursor:pointer;margin-left:6px" title="採用コストCSVを読み込みます">
+    ＋ コストCSV
+    <input type="file" id="cost-file" accept=".csv,.tsv,.txt" style="display:none">
+  </label>
+  <div style="width:1px;height:20px;background:var(--border2);margin:0 8px"></div>
+  <button class="btn" onclick="exportSettings()" title="希望年収・確度フラグ・料率・転換率などの設定をJSONファイルに保存します">↓ 設定エクスポート</button>
+  <label class="btn" style="cursor:pointer;margin-left:6px" title="別のPCや別ファイルからエクスポートした設定を読み込みます">
+    ↑ 設定インポート
+    <input type="file" id="settings-import-file" accept=".json" style="display:none" onchange="importSettings(this)">
+  </label>
+</div>
+
+<!-- Tab Nav -->
+<div id="tab-nav">
+  <button class="tab-btn active" data-tab="weekly">週次レポート</button>
+  <button class="tab-btn" data-tab="monthly">月次レポート</button>
+  <button class="tab-btn" data-tab="jobtype">職種別進捗</button>
+  <button class="tab-btn" data-tab="cost">採用コスト</button>
+</div>
+
+<!-- Main -->
+<div id="main-wrap">
+
+<!-- ── Tab 1: 週次レポート ── -->
+<div id="tab-weekly" class="tab-panel active">
+  <div id="weekly-empty" class="empty"><h3>HERPデータを読み込んでください</h3><p>ヘッダーの「＋ HERPデータ」からCSVファイルを選択します</p></div>
+  <div id="weekly-content" style="display:none">
+    <div class="sec" style="margin-bottom:14px">
+      <div id="kpi-combined"></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-title">選考ファネル（累計）</div>
+      <div id="funnel"></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-title">ステップ間通過率</div>
+      <div id="pass-rates" class="rate-grid"></div>
+    </div>
+
+    <div id="active-candidates"></div>
+  </div>
+</div>
+
+<!-- ── Tab 2: 月次レポート ── -->
+<div id="tab-monthly" class="tab-panel">
+  <div id="monthly-empty" class="empty"><h3>HERPデータを読み込んでください</h3></div>
+  <div id="monthly-content" style="display:none">
+    <!-- Yomi -->
+    <div class="sec" style="margin-bottom:14px">
+      <div class="sec-title">ヨミ管理</div>
+      <div id="yomi-section"></div>
+    </div>
+
+    <!-- Weighted Yomi -->
+    <div class="sec" style="margin-bottom:14px">
+      <div class="sec-title">加重ヨミ計算（パイプライン期待値）
+        <span style="font-size:10px;font-weight:400;color:var(--text3)">※ 全期間CSVをドロップすると精度が上がります</span>
+      </div>
+      <div id="weighted-yomi-section"></div>
+    </div>
+
+    <!-- 職種別加重ヨミ -->
+    <div class="sec" style="margin-bottom:14px">
+      <div class="sec-title">職種別加重ヨミ
+        <span style="font-size:10px;font-weight:400;color:var(--text3)">※ 転換率は職種単独データ優先、サンプル不足時は全体値を使用</span>
+      </div>
+      <div id="monthly-jt-weighted-yomi" class="tbl-wrap"></div>
+    </div>
+
+    <!-- Monthly funnel summary -->
+    <div class="sec">
+      <div class="sec-title">月別ファネルサマリー</div>
+      <div id="monthly-funnel-table" class="tbl-wrap"></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-grid chart-3">
+      <div class="sec">
+        <div class="sec-title">月別エントリー数</div>
+        <div class="chart-wrap"><canvas id="chart-monthly-entry"></canvas></div>
+      </div>
+      <div class="sec">
+        <div class="sec-title">月別内定・内定承諾数</div>
+        <div class="chart-wrap"><canvas id="chart-monthly-offer"></canvas></div>
+      </div>
+      <div class="sec">
+        <div class="sec-title">応募経路別エントリー数</div>
+        <div class="chart-wrap"><canvas id="chart-channel"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Channel funnel -->
+    <div class="sec">
+      <div class="sec-title">応募経路別ファネル実績</div>
+      <div id="channel-funnel-table" class="tbl-wrap"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Tab 3: 職種別進捗 ── -->
+<div id="tab-jobtype" class="tab-panel">
+  <div id="jobtype-empty" class="empty"><h3>HERPデータを読み込んでください</h3></div>
+  <div id="jobtype-content" style="display:none">
+    <div class="filter-row">
+      <input class="search-in" id="jt-search" placeholder="職種で絞り込み…" oninput="renderJobType()">
+      <div style="flex:1"></div>
+      <button class="sort-btn active" id="sort-total" onclick="setJtSort('total')">合計順</button>
+      <button class="sort-btn" id="sort-offer" onclick="setJtSort('offer')">内定承諾順</button>
+      <button class="sort-btn" id="sort-rate" onclick="setJtSort('rate')">通過率順</button>
+      <label class="toggle-lbl" style="display:flex;align-items:center;gap:6px;margin-left:10px">
+        <label class="toggle"><input type="checkbox" id="hm-toggle" checked onchange="renderJobType()"><span class="toggle-slider"></span></label>
+        ヒートマップ
+      </label>
+    </div>
+    <div class="tbl-wrap"><div id="jt-table"></div></div>
+    <!-- 職種別加重ヨミ -->
+    <div class="sec" style="margin-top:14px">
+      <div class="sec-title">職種別加重ヨミ
+        <span style="font-size:10px;font-weight:400;color:var(--text3)">※ 転換率は職種単独データ優先、サンプル不足時は全体値を使用</span>
+      </div>
+      <div id="jt-weighted-yomi" class="tbl-wrap"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Tab 4: 採用コスト ── -->
+<div id="tab-cost" class="tab-panel">
+  <div id="cost-empty" class="empty"><h3>コストCSVを読み込んでください</h3><p>ヘッダーの「＋ コストCSV」からファイルを選択します</p></div>
+  <div id="cost-content" style="display:none">
+    <div id="cost-kpi" class="kpi-grid kpi-grid-5" style="margin-bottom:14px"></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+      <div class="sec">
+        <div class="sec-title">チャネル別成果報酬・CPA</div>
+        <div id="channel-cost-table" class="tbl-wrap"></div>
+      </div>
+      <div class="sec">
+        <div class="sec-title">エージェント別成果報酬・CPA</div>
+        <div id="agent-cost-table" class="tbl-wrap"></div>
+      </div>
+    </div>
+
+    <!-- Budget -->
+    <div class="sec" style="margin-bottom:14px">
+      <div class="sec-title">事業部別採用予算 vs 実績
+        <div style="display:flex;gap:6px">
+          <button class="btn" onclick="autoSyncBudgetDepts()" style="font-size:10px;padding:3px 10px">⟳ CSV同期</button>
+          <button class="btn" onclick="addBudgetDept()" style="font-size:10px;padding:3px 10px">＋ 手動追加</button>
+        </div>
+      </div>
+      <div id="budget-table"></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-grid chart-2" style="margin-bottom:14px">
+      <div class="sec">
+        <div class="sec-title">事業部別成果報酬</div>
+        <div class="chart-wrap"><canvas id="chart-dept-cost"></canvas></div>
+      </div>
+      <div class="sec">
+        <div class="sec-title">月次コスト推移</div>
+        <div class="chart-wrap"><canvas id="chart-monthly-cost"></canvas></div>
+      </div>
+    </div>
+    <div class="chart-grid chart-2" style="margin-bottom:14px">
+      <div class="sec">
+        <div class="sec-title">年収分布</div>
+        <div class="chart-wrap"><canvas id="chart-salary-dist"></canvas></div>
+      </div>
+      <div class="sec">
+        <div class="sec-title">平均年収（事業部別）</div>
+        <div class="chart-wrap"><canvas id="chart-avg-salary"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Detail table -->
+    <div class="sec">
+      <div class="sec-title">候補者別コスト明細</div>
+      <div class="filter-row" id="cost-filters">
+        <input class="search-in" id="cost-search" placeholder="名前・経路で検索…" oninput="renderCostDetail()">
+        <select id="cost-channel-filter" class="search-in" style="width:auto" onchange="renderCostDetail()"><option value="">チャネル: すべて</option></select>
+        <input class="search-in" id="cost-month-filter" placeholder="入社月 (例: 2026-03)" style="width:130px" oninput="renderCostDetail()">
+      </div>
+      <div class="tbl-wrap"><div id="cost-detail-table"></div></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- #main-wrap -->
+</div><!-- #app -->
+
+<div id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════
+const STEPS = ['エントリー','書類選考','カジュアル面談','一次選考','二次選考','三次選考','最終選考','内定','内定承諾'];
+const STEP_COLORS = ['#5b6af7','#6b7aff','#7b89ff','#34d399','#2dd4bf','#fbbf24','#fb923c','#f87171','#a78bfa'];
+const ACTIVE_STEPS = ['内定','最終選考','三次選考','二次選考','一次選考'];
+
+const AGT_RATE_MAP = {
+  'for Startups, Inc.':0.40,'for Startups':0.40,
+  'エンワールド・ジャパン株式会社':0.40,
+  'スローガン株式会社':0.40,
+  'ジェイ エイ シー リクルートメント':0.45,'JAC':0.45,
+  '株式会社Izul':0.35,'Izul':0.35,
+  'アデコ 株式会社':0.35,'アデコ':0.35,
+  'クライス&カンパニー':0.35,
+  '株式会社NicheNiche':0.50,'NicheNiche':0.50,
+  '株式会社フューチャーリンク':0.40,
+  '株式会社ミライフ':0.35,'ミライフ':0.35,
+  'sincereed株式会社':0.35,
+  'カノープス株式会社':0.35,
+  '株式会社ムービン・ストラテジック・キャリア':0.35,
+  '株式会社ワンキャリア':0.35,
+  '株式会社みらいワークス':0.35,
+  'デカルトサーチ合同会社':0.35,
+  '株式会社インディードリクルートパートナーズ':0.35,
+  '株式会社マルニ':0.35,
+  'Kyun':0.35,
+  '株式会社hape':0.35,
+  '株式会社エージェントセブン':0.35,
+  '株式会社アサイン':0.35,
+  '株式会社パソナ':0.35,
+  '株式会社FLUX':0.40,'FLUX':0.40,
+  'レバテック株式会社':0.35,
+  'ROYAL AGENT株式会社':0.40,
+  'リクルートエージェント':0.50,
+  '株式会社ヒュープロ':0.35,
+  'アリカタ株式会社':0.40,
+  'シングレス株式会社':0.40,
+  'Forkwell':0.35,
+  'グッドパッチ':0.35,'株式会社グッドパッチ':0.35,
+  'トプシュー株式会社':0.35,
+  'Xbet株式会社':0.35,
+  'BizReach スカウト':0.35,'BizReach':0.35,
+  'ビズリーチ':0.35,'株式会社ビズリーチ':0.35,
+  '転職ドラフト':0.25,
+  'LAPRAS':0.25,
+  'YOUTRUST':0,'Wantedly':0,
+  'Findy':0.35,'ファインディ株式会社':0.35,
+  'パーソルキャリア株式会社':0.35,
+  'アクシスコンサルティング株式会社':0.40,
+  'AMBI スカウト':0.35,
+  'LinkedIn（スカウト）':0,
+  '株式会社BOX':0.35,
+  '株式会社マスメディアン':0.35,
+  'Professional Studio株式会社':0.40,
+};
+const DEFAULT_RATE = 0.35;
+
+// ═══════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════
+let herpRows = [];
+let costRows = [];
+let commentSalaryMap = {}; // 応募ID → 万円（プライベートコメントから抽出）
+let herpFileName = '';
+let costFileName = '';
+let currentTab = 'weekly';
+let jtSort = 'total';
+
+// 集計期間フィルタ
+let filterFrom = null; // Date or null
+let filterTo   = null; // Date or null
+
+function filteredHerp(){
+  if(!filterFrom && !filterTo) return herpRows;
+  return herpRows.filter(r=>{
+    if(!r._date) return true;
+    if(filterFrom && r._date < filterFrom) return false;
+    if(filterTo   && r._date > filterTo)   return false;
+    return true;
+  });
+}
+
+function applyDateFilter(){
+  const from = document.getElementById('date-from').value;
+  const to   = document.getElementById('date-to').value;
+  filterFrom = from ? new Date(from) : null;
+  filterTo   = to   ? new Date(to+'T23:59:59') : null;
+  document.getElementById('filter-badge').style.display = (filterFrom||filterTo) ? '' : 'none';
+  if(herpRows.length) renderAll();
+}
+
+function resetDateFilter(){
+  filterFrom = filterTo = null;
+  document.getElementById('date-from').value = '';
+  document.getElementById('date-to').value   = '';
+  document.getElementById('filter-badge').style.display = 'none';
+  if(herpRows.length) renderAll();
+}
+
+// localStorage backed maps
+let salaryMap = {};
+let flagMap = {};
+let flagManualMap = {};
+let rateOverrideMap = {};
+let targets = {};
+let budgets = {};
+let budgetDepts = [];
+let headcountTargets = {};
+let convOverrides = {};
+
+// Chart refs
+const charts = {};
+
+// ═══════════════════════════════════════════════
+// LOCALSTORAGE
+// ═══════════════════════════════════════════════
+function lsLoad(){
+  try{
+    salaryMap = JSON.parse(localStorage.getItem('recruit_salaries')||'{}');
+    flagMap = JSON.parse(localStorage.getItem('recruit_flags')||'{}');
+    flagManualMap = JSON.parse(localStorage.getItem('recruit_flags_manual')||'{}');
+    rateOverrideMap = JSON.parse(localStorage.getItem('recruit_rates')||'{}');
+    targets = JSON.parse(localStorage.getItem('recruit_targets')||'{}');
+    budgets = JSON.parse(localStorage.getItem('recruit_budgets')||'{}');
+    budgetDepts = JSON.parse(localStorage.getItem('recruit_budget_depts')||'[]');
+    headcountTargets = JSON.parse(localStorage.getItem('recruit_hc_targets')||'{}');
+    convOverrides  = JSON.parse(localStorage.getItem('recruit_conv_overrides')||'{}');
+  }catch(e){}
+}
+function lsSave(){
+  try{
+    localStorage.setItem('recruit_salaries', JSON.stringify(salaryMap));
+    localStorage.setItem('recruit_flags', JSON.stringify(flagMap));
+    localStorage.setItem('recruit_flags_manual', JSON.stringify(flagManualMap));
+    localStorage.setItem('recruit_rates', JSON.stringify(rateOverrideMap));
+    localStorage.setItem('recruit_targets', JSON.stringify(targets));
+    localStorage.setItem('recruit_budgets', JSON.stringify(budgets));
+    localStorage.setItem('recruit_budget_depts', JSON.stringify(budgetDepts));
+    localStorage.setItem('recruit_hc_targets', JSON.stringify(headcountTargets));
+    localStorage.setItem('recruit_conv_overrides', JSON.stringify(convOverrides));
+  }catch(e){}
+}
+
+function exportSettings(){
+  const data = {
+    _version: 1,
+    _exported: new Date().toISOString(),
+    recruit_salaries:       salaryMap,
+    recruit_flags:          flagMap,
+    recruit_flags_manual:   flagManualMap,
+    recruit_rates:          rateOverrideMap,
+    recruit_budgets:        budgets,
+    recruit_budget_depts:   budgetDepts,
+    recruit_hc_targets:     headcountTargets,
+    recruit_conv_overrides: convOverrides,
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'recruitment_settings.json';
+  a.click();
+  showToast('設定をエクスポートしました');
+}
+
+function importSettings(input){
+  const file = input.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const data = JSON.parse(e.target.result);
+      if(data.recruit_salaries)       salaryMap        = data.recruit_salaries;
+      if(data.recruit_flags)          flagMap          = data.recruit_flags;
+      if(data.recruit_flags_manual)   flagManualMap    = data.recruit_flags_manual;
+      if(data.recruit_rates)          rateOverrideMap  = data.recruit_rates;
+      if(data.recruit_budgets)        budgets          = data.recruit_budgets;
+      if(data.recruit_budget_depts)   budgetDepts      = data.recruit_budget_depts;
+      if(data.recruit_hc_targets)     headcountTargets = data.recruit_hc_targets;
+      if(data.recruit_conv_overrides) convOverrides    = data.recruit_conv_overrides;
+      lsSave();
+      renderAll();
+      showToast('設定をインポートしました');
+    }catch(err){
+      alert('設定ファイルの読み込みに失敗しました: ' + err.message);
+    }
+    input.value = '';
+  };
+  reader.readAsText(file);
+}
+
+// ═══════════════════════════════════════════════
+// UTILITIES
+// ═══════════════════════════════════════════════
+function stepIdx(s){ return STEPS.indexOf(s) }
+
+function isActive(r){
+  return !r.endReason || r.endReason.trim() === '';
+}
+
+function isShot(channel){
+  return (channel||'').includes('エージェント') || (channel||'').includes('スカウト');
+}
+
+function getRate(channelDetail, id){
+  if(id && rateOverrideMap[id] !== undefined) return rateOverrideMap[id]/100;
+  if(!channelDetail) return DEFAULT_RATE;
+  if(AGT_RATE_MAP[channelDetail] !== undefined) return AGT_RATE_MAP[channelDetail];
+  for(const [k,v] of Object.entries(AGT_RATE_MAP)){
+    if(channelDetail.includes(k) || k.includes(channelDetail)) return v;
+  }
+  return null; // not found → unregistered
+}
+
+function isRegistered(channelDetail){
+  if(!channelDetail) return false;
+  if(AGT_RATE_MAP[channelDetail] !== undefined) return true;
+  for(const k of Object.keys(AGT_RATE_MAP)){
+    if(channelDetail.includes(k) || k.includes(channelDetail)) return true;
+  }
+  return false;
+}
+
+function parseDate(s){
+  if(!s) return null;
+  const m = s.match(/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
+  if(!m) return null;
+  return new Date(+m[1], +m[2]-1, +m[3]);
+}
+
+function toYM(d){
+  if(!d) return '';
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
+}
+
+function today(){ return new Date(); }
+
+function isThisMonth(d){
+  const t = today();
+  return d && d.getFullYear()===t.getFullYear() && d.getMonth()===t.getMonth();
+}
+
+function isLast7d(d){
+  if(!d) return false;
+  const t = today();
+  const diff = (t - d)/(1000*60*60*24);
+  return diff >= 0 && diff < 7;
+}
+
+function fmt(n){ return n==null?'—':n.toLocaleString('ja-JP'); }
+function fmtYen(n){ return n==null?'—':'¥'+Math.round(n).toLocaleString('ja-JP'); }
+function fmtMan(n){ return n==null?'—':Math.round(n/10000).toLocaleString('ja-JP')+'万円'; }
+function pct(a,b){ return b>0?Math.round(a/b*100)+'%':'—'; }
+
+function defaultFlag(step){
+  if(step==='内定'||step==='内定承諾') return '高';
+  if(step==='最終選考'||step==='三次選考') return '中';
+  return '低';
+}
+
+function getFlag(id, step){
+  if(flagManualMap[id]) return flagMap[id]||defaultFlag(step);
+  return defaultFlag(step);
+}
+
+function showToast(msg){
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._t);
+  el._t = setTimeout(()=>el.classList.remove('show'), 2500);
+}
+
+function destroyChart(key){
+  if(charts[key]){ charts[key].destroy(); delete charts[key]; }
+}
+
+function mkChart(key, ctx, cfg){
+  destroyChart(key);
+  charts[key] = new Chart(ctx, cfg);
+}
+
+const CHART_DEF = {
+  plugins:{ legend:{ labels:{ color:'rgba(232,234,240,.6)', font:{size:11}, padding:12, boxWidth:10 } } },
+  scales:{ x:{ ticks:{ color:'rgba(232,234,240,.5)', font:{size:10} }, grid:{ color:'rgba(255,255,255,.05)' } }, y:{ ticks:{ color:'rgba(232,234,240,.5)', font:{size:10} }, grid:{ color:'rgba(255,255,255,.05)' } } },
+  animation:{ duration:400 }, responsive:true, maintainAspectRatio:false,
+};
+
+// ═══════════════════════════════════════════════
+// CSV PARSING
+// ═══════════════════════════════════════════════
+function readFileText(file, cb){
+  const reader = new FileReader();
+  reader.onerror = function(){ showToast('❌ ファイルの読み込みに失敗しました'); };
+  reader.onload = function(e){
+    try {
+      const buf = e.target.result;
+      const b = new Uint8Array(buf);
+      let text;
+      if(b[0]===0xFF && b[1]===0xFE){
+        text = new TextDecoder('utf-16le').decode(buf.slice(2));
+      } else if(b[0]===0xFE && b[1]===0xFF){
+        text = new TextDecoder('utf-16be').decode(buf.slice(2));
+      } else if(b[0]===0xEF && b[1]===0xBB && b[2]===0xBF){
+        text = new TextDecoder('utf-8').decode(buf.slice(3));
+      } else {
+        try { text = new TextDecoder('utf-8').decode(buf); }
+        catch(err){ text = new TextDecoder('shift_jis').decode(buf); }
+      }
+      cb(text);
+    } catch(err){ showToast('❌ デコードエラー: '+err.message); }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function detectDelimiter(text){
+  // 先頭行のタブ数 vs カンマ数で判定
+  const first = text.split('\n')[0];
+  return (first.split('\t').length >= first.split(',').length) ? '\t' : ',';
+}
+
+function parseHerpCSV(file){
+  readFileText(file, text=>{
+    const delim = detectDelimiter(text);
+    Papa.parse(text, {
+      header:true, delimiter:delim, skipEmptyLines:true,
+      complete(res){
+        if(!res.data||res.data.length===0){ showToast('❌ HERPデータが空です'); return; }
+        const keys = Object.keys(res.data[0]);
+        const hasName = keys.some(k=>cleanKey(k).includes('名前')||cleanKey(k).includes('氏名')||cleanKey(k).includes('候補'));
+        if(!hasName){ showToast('❌ 「名前」列が見つかりません。ファイルを確認してください'); return; }
+        herpRows = res.data.map(mapHerpRow).filter(r=>r.name);
+        herpFileName = file.name;
+        onHerpLoaded();
+      },
+      error(e){ showToast('❌ パースエラー: '+e.message); }
+    });
+  });
+}
+
+function mapHerpRow(row){
+  const keys = Object.keys(row);
+  const f = (patterns)=>{
+    for(const p of patterns){
+      const k = keys.find(k=>cleanKey(k).includes(p));
+      if(k) return (row[k]||'').trim();
+    }
+    return '';
+  };
+  return {
+    id: f(['応募ID','ID']),
+    time: f(['応募時刻','応募日時','応募日','時刻','日時']),
+    name: f(['名前','氏名','候補者名','候補者']),
+    step: f(['選考ステップ','選考段階','ステップ','選考状況']),
+    endReason: f(['選考終了理由','終了理由','辞退理由','終了']),
+    channel: f(['応募経路','経路','媒体']),
+    channelDetail: f(['応募経路詳細','経路詳細','媒体詳細','詳細']),
+    jobType: f(['職種','ポジション','部署','事業部','役職']),
+    _date: null, // filled below
+  };
+}
+
+function parseCommentCSV(file){
+  readFileText(file, text=>{
+  const delim = detectDelimiter(text);
+  Papa.parse(text, {
+    header:true, delimiter:delim, skipEmptyLines:true,
+    complete(res){
+      if(!res.data||res.data.length===0){ showToast('❌ コメントCSVの読み込みに失敗しました'); return; }
+      const keys = Object.keys(res.data[0]);
+      const hasBody = keys.some(k=>cleanKey(k).includes('本文'));
+      if(!hasBody){ showToast('❌ 「本文」列が見つかりません'); return; }
+
+      // 希望年収抽出パターン（優先順）
+      const PATTERNS = [
+        /最低希望年収[：:\s]*(\d{3,4})/,
+        /希望年収[：:\s]*(\d{3,4})/,
+        /MUST[：:\s]*(\d{3,4})/,
+        /(\d{3,4})\s*万(?!円以下|以上でも)/,
+      ];
+
+      commentSalaryMap = {};
+      let extracted = 0;
+      res.data.forEach(row=>{
+        const idKey  = keys.find(k=>cleanKey(k).includes('応募ID'));
+        const bodyKey= keys.find(k=>cleanKey(k).includes('本文'));
+        if(!idKey||!bodyKey) return;
+        const id   = (row[idKey]||'').trim();
+        const body = (row[bodyKey]||'');
+        if(!id) return;
+        for(const pat of PATTERNS){
+          const m = pat.exec(body);
+          if(m){
+            const val = parseInt(m[1]);
+            if(val>=200 && val<=5000){ // 200〜5000万円の範囲のみ有効
+              // 同一IDで複数コメントがある場合は最大値を採用
+              if(!commentSalaryMap[id] || val > commentSalaryMap[id])
+                commentSalaryMap[id] = val;
+              extracted++;
+            }
+            break;
+          }
+        }
+      });
+
+      showToast(`✅ コメントCSV読み込み完了。${extracted}件の希望年収を抽出しました`);
+      if(herpRows.length){ renderWeekly(); try{ renderMonthly(); }catch(e){} }
+    },
+    error(){ showToast('❌ コメントCSVの読み込みに失敗しました'); }
+  });
+  }); // readFileText
+}
+
+function parseCostCSV(file){
+  readFileText(file, text=>{
+    const delim = detectDelimiter(text);
+    Papa.parse(text, {
+      header:true, delimiter:delim, skipEmptyLines:true,
+      complete(res){
+        if(!res.data||res.data.length===0){ showToast('❌ コストCSVが空です'); return; }
+        const keys = Object.keys(res.data[0]);
+        const hasMultiCols = keys.length >= 3;
+        const hasName = keys.some(k=>cleanKey(k).includes('候補者')||cleanKey(k).includes('名前')||cleanKey(k).includes('氏名'));
+        if(!hasMultiCols||!hasName){ showToast('❌ コストCSVの列が認識できません'); return; }
+        costRows = res.data.map(mapCostRow).filter(r=>r.name);
+        costFileName = file.name;
+        onCostLoaded();
+      },
+      error(e){ showToast('❌ コストCSVのパースエラー'); }
+    });
+  });
+}
+
+function cleanKey(k){ return (k||'').replace(/^[﻿\s]+/,'').trim(); }
+
+function mapCostRow(row){
+  const keys = Object.keys(row);
+  // exact-first then partial match; BOM-stripped
+  const f = (patterns) => {
+    for(const p of patterns){
+      // exact match first
+      const kExact = keys.find(k => cleanKey(k) === p);
+      if(kExact) return (row[kExact]||'').trim();
+    }
+    for(const p of patterns){
+      const kPartial = keys.find(k => cleanKey(k).includes(p));
+      if(kPartial) return (row[kPartial]||'').trim();
+    }
+    return '';
+  };
+
+  // 年収額（/10000）は常に万円単位 → ×10000で円換算
+  const salaryRaw = f(['年収額（/10000）','年収額(/10000)','年収額（/10,000）']) ||
+                    f(['年収額','年収']);
+  let salary = parseFloat((salaryRaw||'').replace(/[,，]/g,'')) || 0;
+  salary = salary * 10000; // 常に万円→円
+
+  const feeRaw = f(['成果報酬','報酬額']);
+  const fee = feeRaw ? (parseFloat(feeRaw.replace(/[,，¥￥]/g,'')) || null) : null;
+
+  // チャネル詳細は先に完全一致を試みてチャネルを上書きしないよう順序に注意
+  const channelDetail = f(['チャネル詳細','応募経路詳細','経路詳細']);
+  const channel       = f(['チャネル','応募経路','経路']);
+
+  const status = f(['内定承諾','ステータス','選考状況','状況']);
+  const dept   = f(['Dept','dept','事業部','BU']);
+  const jobType = f(['職種','カテゴリー']) || dept;
+
+  return {
+    name:        f(['候補者名','名前','氏名']),
+    jobType,
+    dept,
+    channel,
+    channelDetail,
+    joinMonth:   f(['入社月','入社年月']),
+    joinDate:    f(['入社日']),
+    status,
+    salary,
+    fee,
+    raw: row,
+  };
+}
+
+// ═══════════════════════════════════════════════
+// AFTER LOAD
+// ═══════════════════════════════════════════════
+function onHerpLoaded(){
+  // Precompute dates
+  herpRows.forEach(r=>{ r._date = parseDate(r.time); });
+  // Update button
+  document.getElementById('herp-btn-wrap').innerHTML =
+    `<span style="font-size:11px;color:var(--text2);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${herpFileName}</span>
+     <label class="btn" style="cursor:pointer;margin-left:6px">↺ 再読み込み<input type="file" id="herp-file" accept=".csv,.tsv,.txt" style="display:none"></label>`;
+  document.querySelector('#herp-btn-wrap input').addEventListener('change',e=>{ if(e.target.files[0]) parseHerpCSV(e.target.files[0]); });
+  renderAll();
+  showToast(`✅ ${herpRows.length}件のデータを読み込みました`);
+}
+
+function onCostLoaded(){
+  renderCostTab();
+  try {
+    const added = syncDepts();
+    if(added>0) renderBudgetTable();
+    showToast(`✅ コストCSV: ${costRows.length}件${added>0?' (部門'+added+'件を自動追加)':''}`);
+  } catch(e){
+    showToast(`✅ コストCSV: ${costRows.length}件`);
+  }
+}
+
+function syncDepts(){
+  const depts = [...new Set(costRows.map(r=>r.dept).filter(Boolean))];
+  let added = 0;
+  depts.forEach(d=>{ if(!budgetDepts.includes(d)){ budgetDepts.push(d); added++; } });
+  if(added>0) lsSave();
+  return added;
+}
+
+function autoSyncBudgetDepts(){
+  if(!costRows.length){ showToast('❌ 先にコストCSVを読み込んでください'); return; }
+  const added = syncDepts();
+  renderBudgetTable();
+  showToast(added>0 ? `✅ ${added}件の部門を追加しました` : '部門は最新です');
+}
+
+function renderAll(){
+  if(herpRows.length===0) return;
+  renderWeekly();
+  try { renderMonthly(); } catch(e){ console.error('renderMonthly:', e); showToast('❌ 月次レポート描画エラー: '+e.message); }
+  try { renderJobType(); } catch(e){ console.error('renderJobType:', e); showToast('❌ 職種別描画エラー: '+e.message); }
+}
+
+// ═══════════════════════════════════════════════
+// TAB 1: WEEKLY
+// ═══════════════════════════════════════════════
+function renderWeekly(){
+  try {
+    document.getElementById('weekly-empty').style.display='none';
+    document.getElementById('weekly-content').style.display='block';
+
+    const all = filteredHerp();
+    const thisMonth = all.filter(r=>isThisMonth(r._date));
+    const last7d = all.filter(r=>isLast7d(r._date));
+
+    renderCombinedKPIs(thisMonth, last7d);
+    renderFunnel(all);
+    renderPassRates(all);
+    renderActiveCandidates(all);
+  } catch(e){
+    showToast('❌ 描画エラー: '+e.message);
+    console.error('renderWeekly error:', e);
+  }
+}
+
+function renderCombinedKPIs(monthRows, last7dRows){
+  const el = document.getElementById('kpi-combined');
+  const mTotal = monthRows.length;
+  el.innerHTML =
+    `<div style="display:grid;grid-template-columns:repeat(9,1fr);gap:6px">` +
+    STEPS.map((s,i)=>{
+      const mN = monthRows.filter(r=>stepIdx(r.step)>=i).length;
+      const dN = last7dRows.filter(r=>stepIdx(r.step)>=i).length;
+      const barW = mTotal>0 ? Math.round(mN/mTotal*100) : 0;
+      const col = STEP_COLORS[i];
+      return `<div style="background:var(--surf2);border:1px solid var(--border);border-radius:8px;padding:10px 8px;text-align:center">
+        <div style="font-size:9px;font-weight:700;color:var(--text2);letter-spacing:.04em;margin-bottom:8px;line-height:1.4;min-height:2.8em;display:flex;align-items:center;justify-content:center">${s}</div>
+        <div style="font-size:22px;font-weight:800;color:${col};line-height:1">${mN}</div>
+        <div style="font-size:9px;color:var(--text3);margin-bottom:6px">今月</div>
+        <div style="font-size:15px;font-weight:700;color:${col};opacity:.6;line-height:1">${dN}</div>
+        <div style="font-size:9px;color:var(--text3);margin-bottom:6px">7日</div>
+        <div style="height:2px;background:var(--border);border-radius:1px;overflow:hidden">
+          <div style="height:100%;width:${barW}%;background:${col};border-radius:1px"></div>
+        </div>
+      </div>`;
+    }).join('') +
+    `</div>`;
+}
+
+function renderFunnel(rows){
+  const el = document.getElementById('funnel');
+  const counts = STEPS.map((_,i)=>rows.filter(r=>stepIdx(r.step)>=i).length);
+  const max = counts[0]||1;
+  const colors = STEP_COLORS;
+  el.innerHTML = STEPS.map((s,i)=>{
+    const n = counts[i];
+    const prev = i>0?counts[i-1]:null;
+    const rate = prev!=null && prev>0 ? Math.round(n/prev*100)+'%':'';
+    const w = Math.round(n/max*100);
+    return `<div class="funnel-row">
+      <div class="funnel-lbl">${s}</div>
+      <div class="funnel-track">
+        <div class="funnel-fill" style="width:${w}%;background:${colors[i]}">${n}</div>
+      </div>
+      <div class="funnel-n">${n}</div>
+      <div class="funnel-rate">${rate}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderPassRates(rows){
+  const el = document.getElementById('pass-rates');
+  const counts = STEPS.map((_,i)=>rows.filter(r=>stepIdx(r.step)>=i).length);
+  let html = '';
+  for(let i=0;i<STEPS.length-1;i++){
+    const from = counts[i], to = counts[i+1];
+    const r = from>0?Math.round(to/from*100):0;
+    html += `<div class="rate-card">
+      <div class="lbl" style="font-size:9px">${STEPS[i]}</div>
+      <div class="arrow">↓</div>
+      <div class="pct">${r}%</div>
+      <div class="lbl" style="font-size:9px">${STEPS[i+1]}</div>
+    </div>`;
+  }
+  el.innerHTML = html;
+}
+
+function renderActiveCandidates(rows){
+  const el = document.getElementById('active-candidates');
+  const active = rows.filter(r=>isActive(r));
+
+  // Group by step in display order
+  const groups = [
+    { step:'内定', label:'内定', badge:'badge-hired' },
+    { step:'最終選考', label:'最終選考', badge:'badge-final' },
+    { step:'三次選考', label:'三次選考', badge:'badge-final' },
+    { step:'二次選考', label:'二次選考', badge:'badge-2nd' },
+    { step:'一次選考', label:'一次選考', badge:'badge-1st' },
+  ];
+
+  let html = '';
+  groups.forEach(g=>{
+    const grp = active.filter(r=>r.step===g.step);
+    if(grp.length===0) return;
+    html += `<div class="cand-section">
+      <div class="cand-step-hdr">
+        <span class="badge ${g.badge}">${g.label}</span>
+        <span class="step-count">${grp.length}名</span>
+      </div>
+      <div class="cand-cards">${grp.map(r=>renderCandCard(r)).join('')}</div>
+    </div>`;
+  });
+
+  if(!html) html = '<div style="color:var(--text2);font-size:13px;padding:16px 0">選考中の候補者はいません</div>';
+  el.innerHTML = `<div class="sec"><div class="sec-title">選考中候補者一覧</div>${html}</div>`;
+}
+
+function renderCandCard(r){
+  const shot = isShot(r.channel);
+  const rateVal = getRate(r.channelDetail, r.id);
+  const registered = isRegistered(r.channelDetail);
+  // 非SHOTはデフォルト0%、上書きがあればそちらを使う
+  const effectiveRate = rateOverrideMap[r.id]!=null ? rateOverrideMap[r.id]/100
+    : (shot ? (rateVal!=null ? rateVal : DEFAULT_RATE) : 0);
+  const salary = salaryMap[r.id]||'';
+  const effectiveSalary = salary || commentSalaryMap[r.id] || 0;
+  const reward = effectiveSalary && effectiveRate ? Math.round(effectiveSalary*10000*effectiveRate) : null;
+  const flag = getFlag(r.id, r.step);
+
+  const rateDisplay = (()=>{
+    if(rateOverrideMap[r.id]!=null){
+      return `<input class="cand-input" style="width:64px" type="number" value="${rateOverrideMap[r.id]}" min="0" max="100" step="1"
+        onchange="setRate('${r.id}',this.value)" placeholder="率%">`;
+    }
+    if(shot && registered){
+      return `<span class="cand-rate-txt" style="color:var(--text2)">${Math.round(effectiveRate*100)}%</span>
+        <input class="cand-input" style="width:55px;margin-left:4px" type="number" placeholder="上書き%" min="0" max="100"
+          onchange="setRate('${r.id}',this.value)">`;
+    }
+    if(shot){
+      return `<input class="cand-input unregistered" style="width:64px" type="number" value="${Math.round(effectiveRate*100)}" min="0" max="100" step="1"
+        title="未登録エージェント" onchange="setRate('${r.id}',this.value)" placeholder="率%">`;
+    }
+    // 非SHOT：空欄で手入力可
+    return `<input class="cand-input" style="width:64px" type="number" placeholder="率%" min="0" max="100" step="1"
+      onchange="setRate('${r.id}',this.value)">`;
+  })();
+
+  return `<div class="cand-card">
+    <div class="cand-top">
+      <div>
+        <div class="cand-name">${r.name}</div>
+        <div class="cand-job">${r.jobType||'—'}</div>
+      </div>
+      <div class="cand-badges">
+        <span class="badge ${shot?'badge-shot':'badge-noshot'}">${shot?'SHOT':'非SHOT'}</span>
+      </div>
+    </div>
+    ${r.channelDetail?`<div class="cand-channel" title="${r.channelDetail}">${r.channelDetail}</div>`:''}
+    <div class="cand-row">
+      <span class="cand-row-lbl">料率</span>${rateDisplay}
+    </div>
+    <div class="cand-row">
+      <span class="cand-row-lbl">希望年収</span>
+      <input class="cand-input" type="number" value="${salary}" placeholder="万円" min="0" step="10"
+        onchange="setSalary('${r.id}',this.value)">
+      <span style="font-size:11px;color:var(--text2);margin-left:4px">万円</span>
+      ${(()=>{const h=commentSalaryMap[r.id];return h?`<span class="salary-hint found" title="コメントCSVから抽出">💬 ${h}万</span>`:(Object.keys(commentSalaryMap).length?`<span class="salary-hint">未抽出</span>`:'')})()}
+    </div>
+    <div class="cand-row">
+      <span class="cand-row-lbl">予想報酬</span>
+      ${reward?`<span class="reward-val">${fmtMan(reward)}</span>`:'<span class="reward-dash">—</span>'}
+    </div>
+    <div class="cand-row" style="margin-top:4px">
+      <span class="cand-row-lbl">確度</span>
+      <div class="flag-row">
+        ${['高','中','低'].map(f=>`<button class="flag-btn ${flag===f?'active-'+{高:'high',中:'mid',低:'low'}[f]:''}"
+          onclick="setFlag('${r.id}','${f}','${r.step}')">${f}</button>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function setSalary(id, val){
+  const v = parseFloat(val);
+  if(!isNaN(v) && v>0) salaryMap[id]=v; else delete salaryMap[id];
+  lsSave();
+  renderWeekly();
+  if(currentTab==='monthly') renderMonthly();
+}
+
+function setRate(id, val){
+  const v = parseFloat(val);
+  if(!isNaN(v) && v>=0) rateOverrideMap[id]=v; else delete rateOverrideMap[id];
+  lsSave();
+  renderWeekly();
+  if(currentTab==='monthly') renderMonthly();
+}
+
+function setFlag(id, flag, step){
+  const current = getFlag(id, step);
+  if(current===flag && flagManualMap[id]){
+    // same button → reset to default
+    delete flagManualMap[id];
+    delete flagMap[id];
+  } else {
+    flagMap[id]=flag;
+    flagManualMap[id]=true;
+  }
+  lsSave();
+  renderWeekly();
+  if(currentTab==='monthly') renderMonthly();
+}
+
+// ═══════════════════════════════════════════════
+// TAB 2: MONTHLY
+// ═══════════════════════════════════════════════
+function renderMonthly(){
+  document.getElementById('monthly-empty').style.display='none';
+  document.getElementById('monthly-content').style.display='block';
+
+  const rows = filteredHerp();
+  renderYomi(rows);
+  renderWeightedYomi(rows);
+  renderJobTypeWeightedYomi(rows, '', 'monthly-jt-weighted-yomi');
+  renderMonthlyFunnelTable(rows);
+  renderChannelFunnelTable(rows);
+  // チャートはタブが表示されているときだけ描画（非表示キャンバスへの描画を避ける）
+  if(currentTab==='monthly') renderMonthlyCharts(rows);
+}
+
+
+function renderYomi(rows){
+  const active = rows.filter(isActive);
+  const hired_承諾 = rows.filter(r=>r.step==='内定承諾').length;
+  const hired_内定 = active.filter(r=>r.step==='内定').length;
+  const final = active.filter(r=>r.step==='最終選考'||r.step==='三次選考').length;
+  const second = active.filter(r=>r.step==='二次選考').length;
+  const yomi = hired_承諾+hired_内定+final+second;
+
+  const el = document.getElementById('yomi-section');
+
+  // Effective conversion rates (from weighted yomi calc)
+  const convRates = calcConvRates(rows);
+  const effAccept = convOverrides.acceptRate    != null ? convOverrides.acceptRate/100    : (convRates.acceptRate    || 0);
+  const effFTO    = convOverrides.finalToOffer  != null ? convOverrides.finalToOffer/100  : (convRates.finalToOffer  || 0);
+  const effSTF    = convOverrides.secondToFinal != null ? convOverrides.secondToFinal/100 : (convRates.secondToFinal || 0);
+
+  function stepFactor(step){
+    if(step==='内定')                              return effAccept;
+    if(step==='最終選考'||step==='三次選考')        return effFTO * effAccept;
+    if(step==='二次選考')                          return effSTF * effFTO * effAccept;
+    return effSTF * effFTO * effAccept; // 一次選考など
+  }
+
+  // Flag breakdown
+  const shotCands = active.filter(r=>(r.step==='内定'||r.step==='最終選考'||r.step==='三次選考'||r.step==='二次選考'||r.step==='一次選考') && isShot(r.channel));
+  const flagBreak = {高:0,中:0,低:0,未:0};
+  const rewardSimple   = {高:0,中:0,低:0};
+  const rewardWeighted = {高:0,中:0,低:0};
+  let totalSimple = 0, totalWeighted = 0;
+  shotCands.forEach(r=>{
+    const f = getFlag(r.id, r.step);
+    const sal = salaryMap[r.id] || commentSalaryMap[r.id];
+    const rate = (()=>{ const v = getRate(r.channelDetail,r.id); return v!=null?v:DEFAULT_RATE; })();
+    if(f==='高'||f==='中'||f==='低') flagBreak[f]++;
+    else flagBreak['未']++;
+    if(sal){
+      const base = sal * 10000 * rate;
+      totalSimple   += base;
+      totalWeighted += base * stepFactor(r.step);
+      if(f==='高'||f==='中'||f==='低'){
+        rewardSimple[f]   += base;
+        rewardWeighted[f] += base * stepFactor(r.step);
+      }
+    }
+  });
+  const totalShot = shotCands.length;
+  const totalNoShot = active.filter(r=>!isShot(r.channel)).length;
+
+  function fmtV(v){ return v > 0 ? fmtMan(v) : '—'; }
+
+  el.innerHTML = `
+  <div class="yomi-grid">
+    <div class="yomi-card"><div class="yomi-lbl">実績（承諾）</div><div class="yomi-val c-green">${hired_承諾}</div></div>
+    <div class="yomi-card"><div class="yomi-lbl">内定中</div><div class="yomi-val c-yellow">${hired_内定}</div></div>
+    <div class="yomi-card"><div class="yomi-lbl">最終選考中</div><div class="yomi-val c-orange">${final}</div></div>
+    <div class="yomi-card"><div class="yomi-lbl">二次選考中</div><div class="yomi-val c-purple">${second}</div></div>
+  </div>
+  <div style="display:flex;gap:8px;margin-bottom:10px">
+    <div class="yomi-card" style="flex:1"><div class="yomi-lbl">ヨミ合計</div><div class="yomi-val c-accent">${yomi}</div></div>
+    <div class="yomi-card" style="flex:1"><div class="yomi-lbl">SHOT人数</div><div class="yomi-val" style="font-size:18px">${totalShot} <span style="font-size:11px;color:var(--text2)">/ 非SHOT ${totalNoShot}</span></div></div>
+  </div>
+  <div style="font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">確度別内訳</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px">
+    ${[['高',flagBreak.高,'c-green'],['中',flagBreak.中,'c-yellow'],['低',flagBreak.低,'c-red'],['未設定',flagBreak.未,'c-accent']].map(([l,n,c])=>
+      `<div class="yomi-card" style="padding:8px 10px"><div class="yomi-lbl">${l}</div><div class="yomi-val ${c}" style="font-size:18px">${n}名</div></div>`
+    ).join('')}
+  </div>
+  <div style="font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">予想成果報酬（SHOT×年収×料率）</div>
+  <table class="conv-table">
+    <thead><tr>
+      <th></th>
+      <th class="td-num" style="color:var(--green)">確度高</th>
+      <th class="td-num" style="color:var(--yellow)">確度中</th>
+      <th class="td-num" style="color:var(--red)">確度低</th>
+      <th class="td-num">合計</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td style="font-size:11px;color:var(--text2)">単純合算<span style="font-size:9px;color:var(--text3);margin-left:4px">最大値</span></td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--green)">${fmtV(rewardSimple.高)}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--yellow)">${fmtV(rewardSimple.中)}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--red)">${fmtV(rewardSimple.低)}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700">${fmtV(totalSimple)}</td>
+      </tr>
+      <tr>
+        <td style="font-size:11px;color:var(--text2)">加重ヨミ<span style="font-size:9px;color:var(--text3);margin-left:4px">期待値</span></td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--green)">${fmtV(rewardWeighted.高)}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--yellow)">${fmtV(rewardWeighted.中)}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--red)">${fmtV(rewardWeighted.低)}</td>
+        <td class="td-num" style="font-size:14px;font-weight:800;color:var(--accent2)">${fmtV(totalWeighted)}</td>
+      </tr>
+    </tbody>
+  </table>`;
+}
+
+// ─── 加重ヨミ計算 ───────────────────────────────
+function calcConvRates(rows){
+  const nAccept = rows.filter(r=>r.step==='内定承諾').length;
+  const nOffer  = rows.filter(r=>stepIdx(r.step)>=STEPS.indexOf('内定')).length;
+  const nFinal  = rows.filter(r=>stepIdx(r.step)>=STEPS.indexOf('最終選考')).length;
+  const nSecond = rows.filter(r=>stepIdx(r.step)>=STEPS.indexOf('二次選考')).length;
+  return {
+    // 分子が0（承諾実績なし）はデータ不足とみなしnullを返す
+    acceptRate:    (nOffer  > 0 && nAccept > 0) ? nAccept / nOffer  : null,
+    finalToOffer:  (nFinal  > 0 && nOffer  > 0) ? nOffer  / nFinal  : null,
+    secondToFinal: (nSecond > 0 && nFinal  > 0) ? nFinal  / nSecond : null,
+    nOffer, nFinal, nSecond, nAccept
+  };
+}
+
+function setConvOverride(key, val){
+  const v = parseFloat(val);
+  if(!isNaN(v) && v >= 0 && v <= 100) convOverrides[key] = v;
+  else delete convOverrides[key];
+  lsSave();
+  renderWeightedYomi(filteredHerp());
+}
+
+function renderWeightedYomi(rows){
+  const el = document.getElementById('weighted-yomi-section');
+  if(!el) return;
+
+  const rates  = calcConvRates(rows);
+  const active = rows.filter(isActive);
+
+  const nOfferA  = active.filter(r=>r.step==='内定').length;
+  const nFinalA  = active.filter(r=>r.step==='最終選考'||r.step==='三次選考').length;
+  const nSecondA = active.filter(r=>r.step==='二次選考').length;
+
+  const effAccept = convOverrides.acceptRate    != null ? convOverrides.acceptRate/100    : (rates.acceptRate    || 0);
+  const effFTO    = convOverrides.finalToOffer  != null ? convOverrides.finalToOffer/100  : (rates.finalToOffer  || 0);
+  const effSTF    = convOverrides.secondToFinal != null ? convOverrides.secondToFinal/100 : (rates.secondToFinal || 0);
+
+  const expOffer  = nOfferA  * effAccept;
+  const expFinal  = nFinalA  * effFTO * effAccept;
+  const expSecond = nSecondA * effSTF * effFTO * effAccept;
+  const total     = expOffer + expFinal + expSecond;
+
+  function fmt1(n){ return n.toFixed(1); }
+
+  function pctCell(rate, n){
+    if(rate == null) return '<span style="color:var(--text3)">—</span>';
+    const warn = n > 0 && n < 5;
+    return `<span style="color:var(--text)">${Math.round(rate*100)}%</span>`
+      + `<span class="conv-warn">(n=${n}${warn?' ⚠':''})</span>`;
+  }
+
+  function ovInput(key){
+    const v = convOverrides[key];
+    const has = v != null;
+    return `<input class="conv-override${has?' overridden':''}" type="number" value="${has?v:''}"
+      placeholder="%" min="0" max="100" step="1"
+      onchange="setConvOverride('${key}',this.value)">`
+      + (has ? `<button class="conv-clear-btn" onclick="setConvOverride('${key}','')" title="上書きを解除">↺</button>` : '');
+  }
+
+  const CONF = [
+    { label:'内定中',         rateLabel:'承諾率',     rate:rates.acceptRate,    n:rates.nOffer,  key:'acceptRate',    cnt:nOfferA,  exp:expOffer  },
+    { label:'最終・三次選考中', rateLabel:'最終→内定率', rate:rates.finalToOffer,  n:rates.nFinal,  key:'finalToOffer',  cnt:nFinalA,  exp:expFinal  },
+    { label:'二次選考中',      rateLabel:'二次→最終率', rate:rates.secondToFinal, n:rates.nSecond, key:'secondToFinal', cnt:nSecondA, exp:expSecond },
+  ];
+
+  let html = `<table class="conv-table">
+    <thead><tr>
+      <th>ステップ</th>
+      <th>実績転換率</th>
+      <th>手動上書き</th>
+      <th class="td-num">現在人数</th>
+      <th class="td-num">期待値</th>
+    </tr></thead>
+    <tbody>
+    ${CONF.map(c=>`<tr>
+      <td style="font-size:12px">${c.label}</td>
+      <td style="font-size:11px">${pctCell(c.rate,c.n)} <span style="font-size:9px;color:var(--text3)">${c.rateLabel}</span></td>
+      <td style="white-space:nowrap">${ovInput(c.key)}</td>
+      <td class="td-num" style="font-size:14px;font-weight:700">${c.cnt}</td>
+      <td class="td-num" style="font-size:14px;font-weight:700;color:var(--accent2)">${fmt1(c.exp)}</td>
+    </tr>`).join('')}
+    <tr style="border-top:2px solid var(--border2)">
+      <td colspan="3" style="font-size:12px;font-weight:700;color:var(--text2)">加重ヨミ合計</td>
+      <td class="td-num" style="font-size:11px;color:var(--text3)">${nOfferA+nFinalA+nSecondA}</td>
+      <td class="td-num" style="font-size:18px;font-weight:800;color:var(--green)">${fmt1(total)}</td>
+    </tr>
+    </tbody>
+  </table>`;
+
+  el.innerHTML = html;
+}
+
+function renderMonthlyFunnelTable(rows){
+  const months = [...new Set(rows.map(r=>toYM(r._date)).filter(Boolean))].sort();
+  if(months.length===0) return;
+  const el = document.getElementById('monthly-funnel-table');
+  let html = '<table><thead><tr><th>選考ステップ</th>';
+  months.forEach(m=>html+=`<th>${m}</th>`);
+  html+='<th>合計</th></tr></thead><tbody>';
+  STEPS.forEach((s,si)=>{
+    html+=`<tr><td class="td-bold">${s}</td>`;
+    let total=0;
+    months.forEach(m=>{
+      const n = rows.filter(r=>toYM(r._date)===m && stepIdx(r.step)>=si).length;
+      total+=n;
+      html+=`<td class="td-num">${n}</td>`;
+    });
+    html+=`<td class="td-num td-bold">${total}</td></tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML = html;
+}
+
+function renderMonthlyCharts(rows){
+  rows = rows || filteredHerp();
+  const months = [...new Set(rows.map(r=>toYM(r._date)).filter(Boolean))].sort();
+  if(months.length===0) return;
+
+  const entryByM  = months.map(m=>rows.filter(r=>toYM(r._date)===m).length);
+  const offerByM  = months.map(m=>rows.filter(r=>toYM(r._date)===m && r.step==='内定').length);
+  const acceptByM = months.map(m=>rows.filter(r=>toYM(r._date)===m && r.step==='内定承諾').length);
+
+  const baseScales = { x:{ticks:{color:'rgba(232,234,240,.5)',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}}, y:{ticks:{color:'rgba(232,234,240,.5)',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}}};
+
+  mkChart('monthly-entry', document.getElementById('chart-monthly-entry'), {
+    type:'bar', data:{ labels:months, datasets:[{label:'エントリー数', data:entryByM, backgroundColor:'rgba(91,106,247,.7)', borderRadius:3}] },
+    options:{...CHART_DEF, scales:baseScales}
+  });
+
+  mkChart('monthly-offer', document.getElementById('chart-monthly-offer'), {
+    type:'bar', data:{ labels:months, datasets:[
+      {label:'内定', data:offerByM, backgroundColor:'rgba(251,191,36,.7)', borderRadius:3},
+      {label:'内定承諾', data:acceptByM, backgroundColor:'rgba(52,211,153,.7)', borderRadius:3}
+    ]},
+    options:{...CHART_DEF, scales:baseScales}
+  });
+
+  const channels = [...new Set(rows.map(r=>r.channel).filter(Boolean))];
+  const chColors = ['#5b6af7','#34d399','#fbbf24','#f87171','#a78bfa','#fb923c','#2dd4bf','#60a5fa'];
+  mkChart('channel', document.getElementById('chart-channel'), {
+    type:'doughnut',
+    data:{ labels:channels, datasets:[{data:channels.map(c=>rows.filter(r=>r.channel===c).length), backgroundColor:chColors.slice(0,channels.length), borderWidth:0}]},
+    options:{...CHART_DEF, cutout:'65%', scales:undefined}
+  });
+}
+
+function renderChannelFunnelTable(rows){
+  const channels = [...new Set(rows.map(r=>r.channel).filter(Boolean))].sort();
+  const el = document.getElementById('channel-funnel-table');
+  if(channels.length===0){ el.innerHTML='<div style="padding:12px;color:var(--text2)">データなし</div>'; return; }
+  let html='<table><thead><tr><th>応募経路</th><th class="td-num">エントリー</th>';
+  STEPS.slice(1).forEach(s=>html+=`<th class="td-num">${s}</th>`);
+  html+='<th class="td-num">通過率</th></tr></thead><tbody>';
+  channels.forEach(ch=>{
+    const chRows = rows.filter(r=>r.channel===ch);
+    const entry = chRows.length;
+    const accept = chRows.filter(r=>r.step==='内定承諾').length;
+    html+=`<tr><td class="td-bold">${ch}</td><td class="td-num">${entry}</td>`;
+    STEPS.slice(1).forEach((_,i)=>{
+      const n=chRows.filter(r=>stepIdx(r.step)>=i+1).length;
+      html+=`<td class="td-num">${n}</td>`;
+    });
+    html+=`<td class="td-num td-pct">${pct(accept,entry)}</td></tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+// ═══════════════════════════════════════════════
+// TAB 3: 職種別進捗
+// ═══════════════════════════════════════════════
+let jtSortKey = 'total';
+function setJtSort(key){
+  jtSortKey = key;
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('sort-'+key).classList.add('active');
+  renderJobType();
+}
+
+function renderJobType(){
+  document.getElementById('jobtype-empty').style.display='none';
+  document.getElementById('jobtype-content').style.display='block';
+
+  const q = document.getElementById('jt-search').value.trim().toLowerCase();
+  const hmOn = document.getElementById('hm-toggle').checked;
+
+  const allRows = filteredHerp();
+  let jobTypes = [...new Set(allRows.map(r=>r.jobType).filter(Boolean))];
+  if(q) jobTypes = jobTypes.filter(jt=>jt.toLowerCase().includes(q));
+
+  // Compute stats per jobType
+  let rows = jobTypes.map(jt=>{
+    const r = allRows.filter(r=>r.jobType===jt);
+    const counts = STEPS.map((_,i)=>r.filter(rr=>stepIdx(rr.step)>=i).length);
+    const accept = counts[8];
+    const entry = counts[0];
+    const pass1 = counts[3]; // 一次以上
+    const resign = r.filter(rr=>rr.endReason&&rr.endReason.includes('辞退')).length;
+    const nonSel = r.filter(rr=>rr.endReason&&(rr.endReason.includes('見送')||rr.endReason.includes('不合格')||rr.endReason.includes('お見送'))).length;
+    return { jt, entry, counts, accept, pass1Rate: entry>0?pass1/entry:0, resignRate: entry>0?resign/entry:0, nonSelRate: entry>0?nonSel/entry:0 };
+  });
+
+  // Sort
+  if(jtSortKey==='total') rows.sort((a,b)=>b.entry-a.entry);
+  else if(jtSortKey==='offer') rows.sort((a,b)=>b.accept-a.accept);
+  else if(jtSortKey==='rate') rows.sort((a,b)=>b.pass1Rate-a.pass1Rate);
+
+  const maxEntry = Math.max(...rows.map(r=>r.entry),1);
+
+  let html='<table><thead><tr><th>職種</th>';
+  STEPS.forEach(s=>html+=`<th class="td-num">${s}</th>`);
+  html+='<th class="td-num" style="color:var(--green)">有効応募率</th><th class="td-num">辞退率</th></tr></thead><tbody>';
+
+  rows.forEach(r=>{
+    html+=`<tr><td class="td-bold" style="white-space:nowrap">${r.jt}</td>`;
+    r.counts.forEach((n,i)=>{
+      let bg='';
+      if(hmOn&&r.entry>0){
+        const ratio=n/r.entry;
+        const alpha=0.08+ratio*0.55;
+        bg=`background:rgba(${STEP_COLORS[i].replace('#','').match(/.{2}/g).map(h=>parseInt(h,16)).join(',')},${alpha.toFixed(2)})`;
+      }
+      html+=`<td class="td-num hm-cell" style="${bg}">${n}<div class="hm-sub">${r.entry>0?Math.round(n/r.entry*100)+'%':''}</div></td>`;
+    });
+    html+=`<td class="td-num" style="color:var(--green)">${Math.round(r.pass1Rate*100)}%</td>`;
+    html+=`<td class="td-num" style="color:var(--red)">${Math.round(r.resignRate*100)}%</td>`;
+    html+=`</tr>`;
+  });
+  html+='</tbody></table>';
+  document.getElementById('jt-table').innerHTML=html;
+  renderJobTypeWeightedYomi(allRows, q);
+}
+
+function renderJobTypeWeightedYomi(allRows, q, elId){
+  const el = document.getElementById(elId || 'jt-weighted-yomi');
+  if(!el) return;
+
+  // Global effective rates
+  const gRates  = calcConvRates(allRows);
+  const gAccept = convOverrides.acceptRate    != null ? convOverrides.acceptRate/100    : (gRates.acceptRate    || 0);
+  const gFTO    = convOverrides.finalToOffer  != null ? convOverrides.finalToOffer/100  : (gRates.finalToOffer  || 0);
+  const gSTF    = convOverrides.secondToFinal != null ? convOverrides.secondToFinal/100 : (gRates.secondToFinal || 0);
+
+  // 全体承諾率もデータ不足の場合は警告を表示して終了
+  const noGlobalData = gAccept === 0 && convOverrides.acceptRate == null && gRates.nAccept === 0;
+  if(noGlobalData){
+    el.innerHTML = `<div style="padding:14px;color:var(--yellow);font-size:12px">
+      ⚠ 承諾実績データが不足しているため期待値を計算できません。<br>
+      <span style="color:var(--text3)">過去の内定承諾者を含む全期間CSVを読み込むか、月次タブの加重ヨミ計算セクションで承諾率を手動上書きしてください。</span>
+    </div>`;
+    return;
+  }
+
+  const active = allRows.filter(isActive);
+  let jobTypes = [...new Set(allRows.map(r=>r.jobType).filter(Boolean))].sort();
+  if(q) jobTypes = jobTypes.filter(jt=>jt.toLowerCase().includes(q));
+
+  const jtData = jobTypes.map(jt=>{
+    const jtAll    = allRows.filter(r=>r.jobType===jt);
+    const jtActive = active.filter(r=>r.jobType===jt);
+    const jtR      = calcConvRates(jtAll);
+
+    const effA = jtR.acceptRate    != null ? jtR.acceptRate    : gAccept;
+    const effF = jtR.finalToOffer  != null ? jtR.finalToOffer  : gFTO;
+    const effS = jtR.secondToFinal != null ? jtR.secondToFinal : gSTF;
+
+    const nO = jtActive.filter(r=>r.step==='内定').length;
+    const nF = jtActive.filter(r=>r.step==='最終選考'||r.step==='三次選考').length;
+    const nS = jtActive.filter(r=>r.step==='二次選考').length;
+    const exp = nO*effA + nF*effF*effA + nS*effS*effF*effA;
+
+    return { jt, jtR, effA, effF, effS, nO, nF, nS, exp };
+  }).filter(d=>d.nO+d.nF+d.nS>0).sort((a,b)=>b.exp-a.exp);
+
+  if(jtData.length===0){
+    el.innerHTML='<div style="padding:12px;color:var(--text3)">選考中の候補者がいません</div>';
+    return;
+  }
+
+  function rStr(jtRate, gRate, n, overrideKey){
+    const ov = convOverrides[overrideKey] != null;
+    if(jtRate != null){
+      const warn = n < 5;
+      return `<span style="color:var(--text)">${Math.round(jtRate*100)}%</span>`
+           + `<span class="conv-warn">(n=${n}${warn?' ⚠':''})</span>`;
+    }
+    // fallback to global
+    const pct = Math.round(gRate*100);
+    return `<span style="color:var(--text3)">${pct}%</span>`
+         + `<span style="font-size:9px;color:var(--text3);margin-left:2px">${ov?'★上書':'全体'}</span>`;
+  }
+
+  const totalNO  = jtData.reduce((s,d)=>s+d.nO,0);
+  const totalNF  = jtData.reduce((s,d)=>s+d.nF,0);
+  const totalNS  = jtData.reduce((s,d)=>s+d.nS,0);
+  const totalExp = jtData.reduce((s,d)=>s+d.exp,0);
+
+  let html=`<table class="conv-table">
+    <thead><tr>
+      <th>職種</th>
+      <th>承諾率</th>
+      <th>最終→内定</th>
+      <th>二次→最終</th>
+      <th class="td-num">内定中</th>
+      <th class="td-num">最終中</th>
+      <th class="td-num">二次中</th>
+      <th class="td-num">期待値（人）</th>
+    </tr></thead>
+    <tbody>
+    ${jtData.map(d=>{
+      const short = d.jt.replace(/^\d+\.?\s*【[^】]+】\s*/,'').trim()||d.jt;
+      return `<tr>
+        <td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${d.jt}">${short}</td>
+        <td style="font-size:10px">${rStr(d.jtR.acceptRate,   gAccept, d.jtR.nOffer,  'acceptRate')}</td>
+        <td style="font-size:10px">${rStr(d.jtR.finalToOffer, gFTO,    d.jtR.nFinal,  'finalToOffer')}</td>
+        <td style="font-size:10px">${rStr(d.jtR.secondToFinal,gSTF,    d.jtR.nSecond, 'secondToFinal')}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--yellow)">${d.nO||'—'}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--orange)">${d.nF||'—'}</td>
+        <td class="td-num" style="font-size:12px;font-weight:700;color:var(--purple)">${d.nS||'—'}</td>
+        <td class="td-num" style="font-size:14px;font-weight:800;color:var(--accent2)">${d.exp.toFixed(1)}</td>
+      </tr>`;
+    }).join('')}
+    <tr style="border-top:2px solid var(--border2)">
+      <td colspan="4" style="font-size:12px;font-weight:700;color:var(--text2)">合計</td>
+      <td class="td-num" style="font-size:12px;font-weight:700;color:var(--yellow)">${totalNO}</td>
+      <td class="td-num" style="font-size:12px;font-weight:700;color:var(--orange)">${totalNF}</td>
+      <td class="td-num" style="font-size:12px;font-weight:700;color:var(--purple)">${totalNS}</td>
+      <td class="td-num" style="font-size:16px;font-weight:800;color:var(--green)">${totalExp.toFixed(1)}</td>
+    </tr>
+    </tbody>
+  </table>`;
+
+  el.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════════
+// TAB 4: 採用コスト
+// ═══════════════════════════════════════════════
+function renderCostTab(){
+  document.getElementById('cost-empty').style.display='none';
+  document.getElementById('cost-content').style.display='block';
+  renderCostKPIs();
+  renderChannelCostTable();
+  renderAgentCostTable();
+  renderBudgetTable();
+  renderCostCharts();
+  renderCostDetail();
+  // Populate channel filter
+  const channels = [...new Set(costRows.map(r=>r.channel).filter(Boolean))];
+  const sel = document.getElementById('cost-channel-filter');
+  sel.innerHTML='<option value="">チャネル: すべて</option>'+channels.map(c=>`<option value="${c}">${c}</option>`).join('');
+}
+
+function renderCostKPIs(){
+  const hired = costRows.length;
+  const totalFee = costRows.reduce((s,r)=>{
+    const f = r.fee!=null ? r.fee : (isShot(r.channel)?r.salary*(getRate(r.channelDetail,null)||DEFAULT_RATE):0);
+    return s+f;
+  },0);
+  const totalSalary = costRows.reduce((s,r)=>s+r.salary,0);
+  const cpa = hired>0?totalFee/hired:0;
+  const avgSalary = hired>0?totalSalary/hired:0;
+  const el = document.getElementById('cost-kpi');
+  el.innerHTML = [
+    ['内定承諾者数', hired+'名', 'c-green'],
+    ['成果報酬合計', fmtMan(totalFee), 'c-orange'],
+    ['CPA', fmtMan(cpa), 'c-yellow'],
+    ['オファー総額', fmtMan(totalSalary), 'c-accent'],
+    ['平均年収', fmtMan(avgSalary), 'c-purple'],
+  ].map(([l,v,c])=>`<div class="kpi"><div class="kpi-label">${l}</div><div class="kpi-val ${c}" style="font-size:22px">${v}</div></div>`).join('');
+}
+
+function calcFee(r){
+  if(r.fee!=null) return r.fee;
+  if(isShot(r.channel)){
+    const rate = getRate(r.channelDetail,null)||DEFAULT_RATE;
+    return r.salary*rate;
+  }
+  return 0;
+}
+
+function renderChannelCostTable(){
+  const channels=[...new Set(costRows.map(r=>r.channel).filter(Boolean))];
+  const el=document.getElementById('channel-cost-table');
+  let html='<table><thead><tr><th>チャネル</th><th class="td-num">人数</th><th class="td-num">成果報酬</th><th class="td-num">CPA</th></tr></thead><tbody>';
+  channels.forEach(ch=>{
+    const rows=costRows.filter(r=>r.channel===ch);
+    const n=rows.length;
+    const fee=rows.reduce((s,r)=>s+calcFee(r),0);
+    html+=`<tr><td>${ch}</td><td class="td-num">${n}</td><td class="td-num">${fmtMan(fee)}</td><td class="td-num">${fmtMan(n?fee/n:0)}</td></tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+function renderAgentCostTable(){
+  const agents=[...new Set(costRows.filter(r=>isShot(r.channel)).map(r=>r.channelDetail).filter(Boolean))];
+  const el=document.getElementById('agent-cost-table');
+  let html='<table><thead><tr><th>エージェント</th><th class="td-num">人数</th><th class="td-num">料率</th><th class="td-num">成果報酬</th><th class="td-num">CPA</th></tr></thead><tbody>';
+  const agData = agents.map(ag=>{
+    const rows=costRows.filter(r=>r.channelDetail===ag);
+    const n=rows.length;
+    const rate=getRate(ag,null)||DEFAULT_RATE;
+    const fee=rows.reduce((s,r)=>s+calcFee(r),0);
+    return {ag,n,rate,fee};
+  }).sort((a,b)=>b.fee-a.fee);
+  agData.forEach(({ag,n,rate,fee})=>{
+    html+=`<tr><td style="font-size:11px">${ag}</td><td class="td-num">${n}</td><td class="td-num">${Math.round(rate*100)}%</td><td class="td-num">${fmtMan(fee)}</td><td class="td-num">${fmtMan(n?fee/n:0)}</td></tr>`;
+  });
+  if(agents.length===0) html+='<tr><td colspan="5" style="text-align:center;color:var(--text2);padding:20px">エージェント経由のデータなし</td></tr>';
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+function renderBudgetTable(){
+  const el=document.getElementById('budget-table');
+  if(budgetDepts.length===0){
+    el.innerHTML='<div style="color:var(--text2);font-size:12px;padding:8px 0">コストCSVを読み込むと自動で部門が追加されます。手動追加も可能です。</div>';
+    return;
+  }
+  el.innerHTML=budgetDepts.map(dept=>{
+    const deptRows=costRows.filter(r=>r.dept===dept||(r.jobType===dept&&!r.dept));
+    const actual=deptRows.reduce((s,r)=>s+calcFee(r),0);
+    const actualHired=deptRows.length;
+    const budget=(budgets[dept]||0)*10000;
+    const tgtHired=headcountTargets[dept]||0;
+
+    // Cost bar
+    const costRatio=budget>0?Math.min(actual/budget,1):0;
+    const costOver=actual>budget&&budget>0;
+    const costPct=budget>0?Math.round(actual/budget*100):null;
+
+    // Headcount bar
+    const hcRatio=tgtHired>0?Math.min(actualHired/tgtHired,1):0;
+    const hcOver=actualHired>tgtHired&&tgtHired>0;
+
+    // Monthly pace
+    const months=[...new Set(deptRows.map(r=>r.joinMonth).filter(Boolean))].sort();
+    const mCount=months.length||1;
+    const monthlyActual=actual/mCount;
+    const monthlyBudget=budget>0?budget/12:0;
+    const onPace=monthlyBudget>0&&monthlyActual<=monthlyBudget*1.1;
+
+    return `<div class="budget-dept-block">
+      <div class="budget-dept-hdr">
+        <span class="budget-dept-name">${dept}</span>
+        <button class="btn" style="font-size:10px;padding:2px 8px;color:var(--red)" onclick="removeBudgetDept('${dept}')">削除</button>
+      </div>
+      <div class="budget-inputs-row">
+        <span style="font-size:10px;color:var(--text2)">採用予算</span>
+        <input class="kgi-input" type="number" value="${budgets[dept]||''}" placeholder="万円" min="0" style="width:80px"
+          onchange="setBudget('${dept}',this.value)">
+        <span style="font-size:10px;color:var(--text2)">万円</span>
+        <span style="color:var(--border2);margin:0 8px">|</span>
+        <span style="font-size:10px;color:var(--text2)">採用目標</span>
+        <input class="kgi-input" type="number" value="${headcountTargets[dept]||''}" placeholder="人数" min="0" style="width:60px"
+          onchange="setHeadcountTarget('${dept}',this.value)">
+        <span style="font-size:10px;color:var(--text2)">名</span>
+      </div>
+      <div class="budget-bar-row">
+        <span class="budget-bar-lbl">コスト</span>
+        <div class="budget-bar-track"><div class="budget-bar-fill ${costOver?'over':''}" style="width:${Math.round(costRatio*100)}%"></div></div>
+        <span class="budget-bar-val ${costOver?'c-red':''}">${fmtMan(actual)} / ${budget?fmtMan(budget):'未設定'}${costPct!=null?' ('+costPct+'%)':''}</span>
+      </div>
+      <div class="budget-bar-row">
+        <span class="budget-bar-lbl">採用数</span>
+        <div class="budget-bar-track"><div class="budget-bar-fill green ${hcOver?'over':''}" style="width:${Math.round(hcRatio*100)}%"></div></div>
+        <span class="budget-bar-val ${hcOver?'c-red':''}">${actualHired}名 / ${tgtHired?tgtHired+'名':'未設定'}</span>
+      </div>
+      <div class="budget-pace-row">
+        <span class="budget-pace-lbl">月次ペース</span>
+        <span class="budget-pace-val ${monthlyBudget>0?(onPace?'c-green':'c-red'):''}">${fmtMan(monthlyActual)}/月</span>
+        ${monthlyBudget>0?`<span style="font-size:10px;color:var(--text3)">目標 ${fmtMan(monthlyBudget)}/月</span>`:''}
+        ${months.length>0?`<span style="font-size:10px;color:var(--text3);margin-left:4px">(${months.length}ヶ月分)</span>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function setHeadcountTarget(dept,val){
+  const v=parseInt(val);
+  if(!isNaN(v)&&v>=0) headcountTargets[dept]=v; else delete headcountTargets[dept];
+  lsSave(); renderBudgetTable();
+}
+
+function addBudgetDept(){
+  const name=prompt('事業部名を入力してください');
+  if(!name||!name.trim()) return;
+  if(!budgetDepts.includes(name.trim())) budgetDepts.push(name.trim());
+  lsSave(); renderBudgetTable();
+}
+function removeBudgetDept(dept){
+  budgetDepts=budgetDepts.filter(d=>d!==dept);
+  lsSave(); renderBudgetTable();
+}
+function setBudget(dept,val){
+  const v=parseFloat(val);
+  if(!isNaN(v)&&v>=0) budgets[dept]=v; else delete budgets[dept];
+  lsSave(); renderBudgetTable();
+}
+
+function renderCostCharts(){
+  const depts=[...new Set(costRows.map(r=>r.jobType).filter(Boolean))];
+  const deptFees=depts.map(d=>costRows.filter(r=>r.jobType===d).reduce((s,r)=>s+calcFee(r),0));
+  const months=[...new Set(costRows.map(r=>r.joinMonth).filter(Boolean))].sort();
+  const monthFees=months.map(m=>costRows.filter(r=>r.joinMonth===m).reduce((s,r)=>s+calcFee(r),0));
+
+  const baseS={x:{ticks:{color:'rgba(232,234,240,.5)',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'rgba(232,234,240,.5)',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}}};
+
+  mkChart('dept-cost',document.getElementById('chart-dept-cost'),{
+    type:'bar',data:{labels:depts,datasets:[{label:'成果報酬',data:deptFees,backgroundColor:'rgba(91,106,247,.7)',borderRadius:3}]},
+    options:{...CHART_DEF,scales:baseS}
+  });
+  mkChart('monthly-cost',document.getElementById('chart-monthly-cost'),{
+    type:'line',data:{labels:months,datasets:[{label:'月次コスト',data:monthFees,borderColor:'#fb923c',backgroundColor:'rgba(251,146,60,.15)',fill:true,tension:.3,pointRadius:4}]},
+    options:{...CHART_DEF,scales:baseS}
+  });
+
+  // Salary distribution (histogram by 100万円 bucket)
+  const buckets=['〜400','400-500','500-600','600-700','700-800','800-900','900-1000','1000〜'];
+  const buckCounts=costRows.reduce((acc,r)=>{
+    const m=r.salary/10000;
+    const i=m<400?0:m<500?1:m<600?2:m<700?3:m<800?4:m<900?5:m<1000?6:7;
+    acc[i]=(acc[i]||0)+1; return acc;
+  },Array(8).fill(0));
+  mkChart('salary-dist',document.getElementById('chart-salary-dist'),{
+    type:'bar',data:{labels:buckets,datasets:[{label:'人数',data:buckCounts,backgroundColor:'rgba(52,211,153,.6)',borderRadius:3}]},
+    options:{...CHART_DEF,scales:baseS}
+  });
+
+  // Avg salary by dept
+  const avgSals=depts.map(d=>{const rs=costRows.filter(r=>r.jobType===d);return rs.length?rs.reduce((s,r)=>s+r.salary,0)/rs.length/10000:0;});
+  mkChart('avg-salary',document.getElementById('chart-avg-salary'),{
+    type:'bar',data:{labels:depts,datasets:[{label:'平均年収(万円)',data:avgSals,backgroundColor:'rgba(167,139,250,.7)',borderRadius:3}]},
+    options:{...CHART_DEF,scales:baseS}
+  });
+}
+
+function renderCostDetail(){
+  const q=(document.getElementById('cost-search').value||'').toLowerCase();
+  const ch=document.getElementById('cost-channel-filter').value;
+  const mon=(document.getElementById('cost-month-filter').value||'').trim();
+  let rows=costRows.filter(r=>{
+    const mName=!q||(r.name.toLowerCase().includes(q)||(r.channelDetail||'').toLowerCase().includes(q));
+    const mCh=!ch||r.channel===ch;
+    const mMon=!mon||r.joinMonth===mon;
+    return mName&&mCh&&mMon;
+  });
+  const el=document.getElementById('cost-detail-table');
+  if(rows.length===0){el.innerHTML='<div style="padding:16px;text-align:center;color:var(--text2)">該当なし</div>';return;}
+  let html='<table><thead><tr><th>名前</th><th>職種</th><th>チャネル</th><th>経路詳細</th><th class="td-num">年収</th><th class="td-num">料率</th><th class="td-num">成果報酬</th><th>入社月</th></tr></thead><tbody>';
+  rows.forEach(r=>{
+    const rate=getRate(r.channelDetail,null)||DEFAULT_RATE;
+    const fee=calcFee(r);
+    html+=`<tr>
+      <td class="td-bold">${r.name}</td>
+      <td style="font-size:11px">${r.jobType||'—'}</td>
+      <td style="font-size:11px">${r.channel||'—'}</td>
+      <td style="font-size:11px;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.channelDetail||''}">${r.channelDetail||'—'}</td>
+      <td class="td-num">${r.salary?fmtMan(r.salary):'—'}</td>
+      <td class="td-num">${isShot(r.channel)?Math.round(rate*100)+'%':'—'}</td>
+      <td class="td-num" style="color:var(--orange)">${fee?fmtMan(fee):'—'}</td>
+      <td style="font-size:11px">${r.joinMonth||'—'}</td>
+    </tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+// ═══════════════════════════════════════════════
+// TAB SWITCHING
+// ═══════════════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const t=btn.dataset.tab;
+    currentTab=t;
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id==='tab-'+t));
+    // Re-render charts on tab switch (canvas may have been hidden)
+    if(t==='monthly'&&herpRows.length) renderMonthlyCharts();
+    if(t==='cost'&&costRows.length) renderCostCharts();
+  });
+});
+
+// ═══════════════════════════════════════════════
+// FILE INPUTS
+// ═══════════════════════════════════════════════
+document.getElementById('herp-file').addEventListener('change',function(e){
+  if(e.target.files[0]) parseHerpCSV(e.target.files[0]);
+});
+document.getElementById('comment-file').addEventListener('change',function(e){
+  if(e.target.files[0]) parseCommentCSV(e.target.files[0]);
+});
+document.getElementById('cost-file').addEventListener('change',function(e){
+  if(e.target.files[0]) parseCostCSV(e.target.files[0]);
+});
+
+// Drag & drop on body
+document.body.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();});
+document.body.addEventListener('drop',e=>{
+  e.preventDefault();
+  const files=[...e.dataTransfer.files];
+  const herp=files.find(f=>!f.name.toLowerCase().includes('cost')&&(f.name.endsWith('.csv')||f.name.endsWith('.tsv')||f.name.endsWith('.txt')));
+  const cost=files.find(f=>f.name.toLowerCase().includes('cost')&&(f.name.endsWith('.csv')||f.name.endsWith('.tsv')));
+  if(herp) parseHerpCSV(herp);
+  if(cost) parseCostCSV(cost);
+  if(!herp&&!cost&&files[0]) parseHerpCSV(files[0]);
+});
+
+// ═══════════════════════════════════════════════
+// KEYBOARD
+// ═══════════════════════════════════════════════
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.querySelectorAll('.drop-overlay.show').forEach(el=>el.classList.remove('show'));
+});
+
+// ═══════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════
+lsLoad();
+</script>
+</body>
+</html>
